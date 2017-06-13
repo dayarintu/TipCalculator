@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		633EA9921EEF0CC600FF673E /* food-dinner-lunch-meal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 633EA9911EEF0CC600FF673E /* food-dinner-lunch-meal.jpg */; };
-		633EA9961EEF0FA100FF673E /* 512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 633EA9951EEF0FA100FF673E /* 512x512.png */; };
+		631547961EF07E61000F050B /* split.png in Resources */ = {isa = PBXBuildFile; fileRef = 631547951EF07E61000F050B /* split.png */; };
+		631547981EF0804F000F050B /* SplitVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631547971EF0804F000F050B /* SplitVCViewController.swift */; };
 		633EA9981EEF0FD900FF673E /* eat.png in Resources */ = {isa = PBXBuildFile; fileRef = 633EA9971EEF0FD900FF673E /* eat.png */; };
 		63A8C7321EEDA4C700ADA51C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8C7311EEDA4C700ADA51C /* AppDelegate.swift */; };
 		63A8C7341EEDA4C700ADA51C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8C7331EEDA4C700ADA51C /* ViewController.swift */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		633EA9911EEF0CC600FF673E /* food-dinner-lunch-meal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "food-dinner-lunch-meal.jpg"; sourceTree = "<group>"; };
-		633EA9951EEF0FA100FF673E /* 512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 512x512.png; sourceTree = "<group>"; };
+		631547951EF07E61000F050B /* split.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split.png; sourceTree = "<group>"; };
+		631547971EF0804F000F050B /* SplitVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitVCViewController.swift; sourceTree = "<group>"; };
 		633EA9971EEF0FD900FF673E /* eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eat.png; sourceTree = "<group>"; };
 		63A8C72E1EEDA4C700ADA51C /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A8C7311EEDA4C700ADA51C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,10 +63,10 @@
 				63A8C7311EEDA4C700ADA51C /* AppDelegate.swift */,
 				63A8C7331EEDA4C700ADA51C /* ViewController.swift */,
 				63A8C7351EEDA4C700ADA51C /* Main.storyboard */,
+				631547971EF0804F000F050B /* SplitVCViewController.swift */,
 				63A8C7381EEDA4C700ADA51C /* Assets.xcassets */,
+				631547951EF07E61000F050B /* split.png */,
 				633EA9971EEF0FD900FF673E /* eat.png */,
-				633EA9951EEF0FA100FF673E /* 512x512.png */,
-				633EA9911EEF0CC600FF673E /* food-dinner-lunch-meal.jpg */,
 				63A8C73A1EEDA4C700ADA51C /* LaunchScreen.storyboard */,
 				63A8C73D1EEDA4C700ADA51C /* Info.plist */,
 			);
@@ -135,8 +135,7 @@
 			files = (
 				633EA9981EEF0FD900FF673E /* eat.png in Resources */,
 				63A8C73C1EEDA4C700ADA51C /* LaunchScreen.storyboard in Resources */,
-				633EA9961EEF0FA100FF673E /* 512x512.png in Resources */,
-				633EA9921EEF0CC600FF673E /* food-dinner-lunch-meal.jpg in Resources */,
+				631547961EF07E61000F050B /* split.png in Resources */,
 				63A8C7391EEDA4C700ADA51C /* Assets.xcassets in Resources */,
 				63A8C7371EEDA4C700ADA51C /* Main.storyboard in Resources */,
 			);
@@ -149,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631547981EF0804F000F050B /* SplitVCViewController.swift in Sources */,
 				63A8C7341EEDA4C700ADA51C /* ViewController.swift in Sources */,
 				63A8C7321EEDA4C700ADA51C /* AppDelegate.swift in Sources */,
 			);

@@ -38,20 +38,21 @@ class ViewController: UIViewController {
             AmountTextField.text = ""
         }
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var secondController = segue.destination as! SplitVCViewController
+        secondController.totalAmount = totalAmountLabel.text!
     }
     
-    
     @IBAction func calculateTip(_ sender: Any) {
-        
-        if let amount = Double(AmountTextField.text!) , let tip = Double(TipAmountTextField.text!) {
+            if let amount = Double(AmountTextField.text!) , let tip = Double(TipAmountTextField.text!) {
             let totalAmount = amount + tip
             totalAmountLabel.text = String(totalAmount)
         } else {
             AmountTextField.text = ""
         }
+        
     }
     
 }

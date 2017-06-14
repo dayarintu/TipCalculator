@@ -16,22 +16,29 @@ class SplitVCViewController: ViewController {
     
     @IBOutlet weak var totalLabel: UILabel!
     
+    var totalAmount = String()
+    
+//    @IBAction func back(_ sender: Any) {
+//        
+//        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            _ = segue.destination as! ViewController
+//        }
+//    }
+    
     
     @IBAction func calculateSplit(_ sender: Any) {
-        let persons = Int(numberOfPersonsField.text!)
-    
-        let personShareAmount = Double(totalAmountLabel.text!)! / Double(persons!)
+        
+        if let persons = (numberOfPersonsField.text) {
+            if numberOfPersonsField.text != "" {
+        var personShareAmount = Double(totalAmount)! / Double(persons)!
         
         perHeadLabel.text = String(personShareAmount)
-        totalLabel.text = totalAmountLabel.text
+        personShareAmount = Double(totalAmount)! / Double(persons)!
+        totalLabel.text = totalAmount
     }
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    
-        // Do any additional setup after loading the view.
-    }
-
+        }
+        else {
+            totalLabel.text = ""
+        }
+}
 }

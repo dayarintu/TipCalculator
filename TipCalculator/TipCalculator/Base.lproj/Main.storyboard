@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ieN-YA-vCo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--TipCal-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -164,7 +164,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KCC-YN-wSa" kind="show" id="VWm-0g-sgu"/>
+                                    <segue destination="KCC-YN-wSa" kind="show" identifier="segue" id="VWm-0g-sgu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -179,7 +179,6 @@
                             <constraint firstItem="0kB-aA-u06" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xje-ZN-RB4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="TipCal" id="3qm-eA-lyn"/>
                     <connections>
                         <outlet property="AmountTextField" destination="mZY-zS-FL7" id="8tT-ug-Zdj"/>
                         <outlet property="TipAmountTextField" destination="S8y-iQ-nst" id="6vx-Yi-kVb"/>
@@ -189,12 +188,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2695" y="-1290"/>
+            <point key="canvasLocation" x="-2644" y="-1399"/>
         </scene>
-        <!--Title-->
+        <!--splitVC-->
         <scene sceneID="DME-ve-EsA">
             <objects>
-                <viewController id="KCC-YN-wSa" customClass="SplitVCViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="splitVC" id="KCC-YN-wSa" customClass="SplitVCViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9bg-sH-ZNd"/>
                         <viewControllerLayoutGuide type="bottom" id="FEO-O4-Sz0"/>
@@ -215,7 +214,7 @@
                                     <color key="titleColor" red="0.97241830579999999" green="0.5874760805" blue="0.50008834099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ieN-YA-vCo" kind="show" id="f63-tX-Tcv"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="back" id="E2A-8b-vDq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Of Persons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76g-Fn-2xY">
@@ -230,7 +229,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="perHead" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ld-bm-qTL">
                                 <rect key="frame" x="16" y="254" width="120" height="21"/>
@@ -280,25 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAX-ic-qyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1727" y="-1318"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="znD-5S-pdF">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ieN-YA-vCo" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uNr-sV-Brf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Eor-8o-erO"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="33F-BV-qNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3335" y="-1289"/>
+            <point key="canvasLocation" x="-1183" y="-1411"/>
         </scene>
     </scenes>
     <resources>

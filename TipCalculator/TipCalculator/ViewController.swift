@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var secondController = segue.destination as! SplitVCViewController
+        let secondController = segue.destination as! SplitVCViewController
         secondController.totalAmount = totalAmountLabel.text!
     }
     

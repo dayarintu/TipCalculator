@@ -9,7 +9,7 @@
 import UIKit
 
 class SplitVCViewController: ViewController {
-
+    
     @IBOutlet weak var numberOfPersonsField: UITextField!
     
     @IBOutlet weak var perHeadLabel: UILabel!
@@ -29,16 +29,13 @@ class SplitVCViewController: ViewController {
     @IBAction func calculateSplit(_ sender: Any) {
         
         if let persons = (numberOfPersonsField.text) {
-            if numberOfPersonsField.text != "" {
-        var personShareAmount = Double(totalAmount)! / Double(persons)!
+        let personShareAmount = Double(totalAmount)! / Double(persons)!
         
         perHeadLabel.text = String(personShareAmount)
-        personShareAmount = Double(totalAmount)! / Double(persons)!
-        totalLabel.text = totalAmount
+                totalLabel.text = totalAmount
     }
         }
-        else {
-            totalLabel.text = ""
+  
         }
-}
-}
+
+

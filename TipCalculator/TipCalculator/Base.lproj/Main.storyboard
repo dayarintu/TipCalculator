@@ -164,7 +164,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KCC-YN-wSa" kind="show" identifier="segue" id="VWm-0g-sgu"/>
+                                    <segue destination="KCC-YN-wSa" kind="show" identifier="segue" id="rS8-FV-F6E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2644" y="-1399"/>
+            <point key="canvasLocation" x="-3513" y="-1343"/>
         </scene>
         <!--splitVC-->
         <scene sceneID="DME-ve-EsA">
@@ -206,17 +206,6 @@
                                 <rect key="frame" x="87" y="20" width="211" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRO-xa-ves">
-                                <rect key="frame" x="16" y="20" width="70" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <state key="normal" title="&lt;">
-                                    <color key="titleColor" red="0.97241830579999999" green="0.5874760805" blue="0.50008834099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="back" id="E2A-8b-vDq"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Of Persons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76g-Fn-2xY">
                                 <rect key="frame" x="16" y="209" width="129" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -267,6 +256,14 @@
                                     <action selector="calculateSplit:" destination="KCC-YN-wSa" eventType="touchUpInside" id="UnC-0x-hvE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEy-VX-ByA">
+                                <rect key="frame" x="33" y="52" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Wrj-LX-fbv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -279,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAX-ic-qyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1183" y="-1411"/>
+            <point key="canvasLocation" x="-2545" y="-1379"/>
         </scene>
     </scenes>
     <resources>

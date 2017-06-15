@@ -9,31 +9,28 @@
 import UIKit
 
 class SplitVCViewController: ViewController {
-    
+
     @IBOutlet weak var numberOfPersonsField: UITextField!
     
-    @IBOutlet weak var perHeadLabel: UILabel!
     
-    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var totalField: UITextField!
+    @IBOutlet weak var perHead: UITextField!
+
     
     var totalAmount = String()
     
-//    @IBAction func back(_ sender: Any) {
-//        
-//        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            _ = segue.destination as! ViewController
-//        }
-//    }
     
     
     @IBAction func calculateSplit(_ sender: Any) {
         
-        if let persons = (numberOfPersonsField.text) {
-        let personShareAmount = Double(totalAmount)! / Double(persons)!
-        
-        perHeadLabel.text = String(personShareAmount)
-                totalLabel.text = totalAmount
-    }
+        if let persons = (numberOfPersonsField.text),let personAmount = Double(totalAmount){
+            let personShareAmount = Double(personAmount) / Double(persons)!
+            perHead.text = String(personShareAmount)
+                totalField.text = totalAmount
+        }
+        else {
+            totalField.text = ""
+        }
         }
   
         }

@@ -16,8 +16,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var TipOutlet: UISegmentedControl!
     
+    @IBOutlet weak var totalAmountField: UITextField!
+   
 
-    @IBOutlet weak var totalAmountLabel: UILabel!
     
     @IBAction func TipPercentSelector(_ sender: UISegmentedControl) {
         
@@ -42,13 +43,13 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondController = segue.destination as! SplitVCViewController
-        secondController.totalAmount = totalAmountLabel.text!
+        secondController.totalAmount = totalAmountField.text!
     }
     
     @IBAction func calculateTip(_ sender: Any) {
             if let amount = Double(AmountTextField.text!) , let tip = Double(TipAmountTextField.text!) {
             let totalAmount = amount + tip
-            totalAmountLabel.text = String(totalAmount)
+            totalAmountField.text = String(totalAmount)
         } else {
             AmountTextField.text = ""
         }

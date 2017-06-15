@@ -30,7 +30,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C9N-ZB-xxJ" userLabel="mainStack">
-                                <rect key="frame" x="21" y="160" width="344" height="210.5"/>
+                                <rect key="frame" x="21" y="160" width="344" height="160.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="1Aq-wG-EyR" userLabel="BillAmountStack">
                                         <rect key="frame" x="0.0" y="0.0" width="340" height="35"/>
@@ -71,7 +71,7 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="jXj-SL-ZCZ">
+                                            <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="jXj-SL-ZCZ">
                                                 <rect key="frame" x="216" y="0.0" width="125" height="31.5"/>
                                                 <segments>
                                                     <segment title="15%"/>
@@ -137,61 +137,64 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="rHE-Cu-hc0" userLabel="CalSplitStack">
-                                        <rect key="frame" x="0.0" y="170.5" width="343" height="40"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-DJ-xgd">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
-                                                <color key="backgroundColor" red="0.9724183058375635" green="0.37434646539799821" blue="0.18738605076806328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="dBT-bP-2z5"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="31"/>
-                                                <state key="normal" title="Calculate">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zxb-Yg-iAX"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh6-Fe-4nt">
-                                                <rect key="frame" x="222" y="0.0" width="121" height="40"/>
-                                                <color key="backgroundColor" red="0.97241830579999999" green="0.37434646539999999" blue="0.18738605080000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="121" id="0Sa-0E-abo"/>
-                                                    <constraint firstAttribute="height" constant="40" id="eCw-is-cEQ"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="24"/>
-                                                <state key="normal" title="Split">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="8"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <segue destination="KCC-YN-wSa" kind="show" identifier="segue" id="rS8-FV-F6E"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h32-sg-lM2">
+                                <rect key="frame" x="24" y="325.5" width="327" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-DJ-xgd">
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="40"/>
+                                        <color key="backgroundColor" red="0.9724183058375635" green="0.37434646539799821" blue="0.18738605076806328" alpha="0.84243899828767121" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="DzI-4h-PLs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="31"/>
+                                        <state key="normal" title="Calculate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zxb-Yg-iAX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-kw-FOh">
+                                        <rect key="frame" x="205" y="0.0" width="122" height="40"/>
+                                        <color key="backgroundColor" red="0.97241830579999999" green="0.37434646539999999" blue="0.18738605080000001" alpha="0.84243899830000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="F1B-6j-m1M"/>
+                                            <constraint firstAttribute="width" constant="122" id="aaJ-Fm-uHb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="35"/>
+                                        <state key="normal" title="clear">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.cliptoBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IaL-Ko-kt7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="h32-sg-lM2" secondAttribute="trailing" constant="8" id="5VV-GM-KA5"/>
+                            <constraint firstItem="h32-sg-lM2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="7RT-Kl-KAl"/>
                             <constraint firstItem="o1q-gG-lLE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BM2-IC-t7r"/>
                             <constraint firstItem="C9N-ZB-xxJ" firstAttribute="top" secondItem="o1q-gG-lLE" secondAttribute="bottom" constant="29" id="L8R-VU-Jrv"/>
                             <constraint firstItem="C9N-ZB-xxJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="LXF-Wu-IS7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o1q-gG-lLE" secondAttribute="trailing" constant="92" id="Pgc-6Q-YTy"/>
+                            <constraint firstItem="h32-sg-lM2" firstAttribute="top" secondItem="C9N-ZB-xxJ" secondAttribute="bottom" constant="5" id="mXf-K6-Xum"/>
                             <constraint firstAttribute="trailingMargin" secondItem="C9N-ZB-xxJ" secondAttribute="trailing" constant="-6" id="tH2-6i-LWS"/>
                         </constraints>
                     </view>
@@ -204,138 +207,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4185" y="-1861"/>
-        </scene>
-        <!--splitVC-->
-        <scene sceneID="DME-ve-EsA">
-            <objects>
-                <viewController title="splitVC" id="KCC-YN-wSa" customClass="SplitVCViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9bg-sH-ZNd"/>
-                        <viewControllerLayoutGuide type="bottom" id="FEO-O4-Sz0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="23x-fd-z2T">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="split.png" translatesAutoresizingMaskIntoConstraints="NO" id="jLH-vP-JPn">
-                                <rect key="frame" x="75" y="0.0" width="211" height="181"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="181" id="l8t-0y-AYt"/>
-                                </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4po-Rn-A5d">
-                                <rect key="frame" x="16" y="173" width="343" height="151"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4XW-Q8-mnl">
-                                        <rect key="frame" x="17" y="0.0" width="309.5" height="113"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-HV-wVA">
-                                                <rect key="frame" x="0.0" y="0.0" width="309.5" height="37"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Of Persons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76g-Fn-2xY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="165" height="37"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="165" id="GmN-bE-mtl"/>
-                                                            <constraint firstAttribute="height" constant="37" id="dAa-Ey-1Db"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No Of Persons" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w8s-Nc-Jpb">
-                                                        <rect key="frame" x="195" y="0.0" width="114.5" height="37"/>
-                                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="KeH-ng-IQu">
-                                                <rect key="frame" x="0.0" y="42" width="291" height="36"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="perHead" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ld-bm-qTL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="134" height="36"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="36" id="atG-PX-im7"/>
-                                                            <constraint firstAttribute="width" constant="134" id="bYU-zg-j9R"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PerHead" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oDF-5T-aii">
-                                                        <rect key="frame" x="214" y="0.0" width="77" height="36"/>
-                                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4Os-Us-kK1">
-                                                <rect key="frame" x="0.0" y="83" width="200" height="30"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRV-wA-KRW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="120" id="74D-Gt-0ZY"/>
-                                                            <constraint firstAttribute="height" constant="30" id="LCC-Xz-9v7"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="total" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17M-4b-Tgd">
-                                                        <rect key="frame" x="150" y="0.0" width="50" height="30"/>
-                                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO1-Qe-RKs">
-                                        <rect key="frame" x="129" y="117" width="85" height="34"/>
-                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="19"/>
-                                        <state key="normal" title="Calculate">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="calculateSplit:" destination="KCC-YN-wSa" eventType="touchUpInside" id="UnC-0x-hvE"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="4po-Rn-A5d" firstAttribute="leading" secondItem="23x-fd-z2T" secondAttribute="leadingMargin" id="9qN-DA-rlh"/>
-                            <constraint firstItem="4po-Rn-A5d" firstAttribute="top" secondItem="jLH-vP-JPn" secondAttribute="bottom" constant="28" id="CdC-xn-x4b"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4po-Rn-A5d" secondAttribute="trailing" id="avY-VQ-fA4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jLH-vP-JPn" secondAttribute="trailing" constant="73" id="f9j-PC-iqV"/>
-                            <constraint firstItem="jLH-vP-JPn" firstAttribute="leading" secondItem="23x-fd-z2T" secondAttribute="leadingMargin" constant="59" id="nAA-ii-yGX"/>
-                            <constraint firstItem="jLH-vP-JPn" firstAttribute="top" secondItem="23x-fd-z2T" secondAttribute="top" id="rcG-8j-bxc"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" id="AU0-np-K8Y"/>
-                    <connections>
-                        <outlet property="numberOfPersonsField" destination="w8s-Nc-Jpb" id="NBI-TG-1Tr"/>
-                        <outlet property="perHead" destination="oDF-5T-aii" id="4uh-ha-jYV"/>
-                        <outlet property="totalField" destination="17M-4b-Tgd" id="q3A-m7-IIx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xAX-ic-qyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2553" y="-1862"/>
+            <point key="canvasLocation" x="-3792.8000000000002" y="-1897.6011994002999"/>
         </scene>
     </scenes>
     <resources>
         <image name="eat.png" width="512" height="512"/>
-        <image name="split.png" width="544" height="489"/>
     </resources>
 </document>

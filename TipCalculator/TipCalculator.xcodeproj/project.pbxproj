@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		631547961EF07E61000F050B /* split.png in Resources */ = {isa = PBXBuildFile; fileRef = 631547951EF07E61000F050B /* split.png */; };
-		631547981EF0804F000F050B /* SplitVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631547971EF0804F000F050B /* SplitVCViewController.swift */; };
 		633EA9981EEF0FD900FF673E /* eat.png in Resources */ = {isa = PBXBuildFile; fileRef = 633EA9971EEF0FD900FF673E /* eat.png */; };
 		63A8C7321EEDA4C700ADA51C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8C7311EEDA4C700ADA51C /* AppDelegate.swift */; };
 		63A8C7341EEDA4C700ADA51C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8C7331EEDA4C700ADA51C /* ViewController.swift */; };
@@ -19,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		631547951EF07E61000F050B /* split.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = split.png; sourceTree = "<group>"; };
-		631547971EF0804F000F050B /* SplitVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitVCViewController.swift; sourceTree = "<group>"; };
 		633EA9971EEF0FD900FF673E /* eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eat.png; sourceTree = "<group>"; };
 		63A8C72E1EEDA4C700ADA51C /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A8C7311EEDA4C700ADA51C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 				63A8C7311EEDA4C700ADA51C /* AppDelegate.swift */,
 				63A8C7331EEDA4C700ADA51C /* ViewController.swift */,
 				63A8C7351EEDA4C700ADA51C /* Main.storyboard */,
-				631547971EF0804F000F050B /* SplitVCViewController.swift */,
 				63A8C7381EEDA4C700ADA51C /* Assets.xcassets */,
 				631547951EF07E61000F050B /* split.png */,
 				633EA9971EEF0FD900FF673E /* eat.png */,
@@ -148,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				631547981EF0804F000F050B /* SplitVCViewController.swift in Sources */,
 				63A8C7341EEDA4C700ADA51C /* ViewController.swift in Sources */,
 				63A8C7321EEDA4C700ADA51C /* AppDelegate.swift in Sources */,
 			);

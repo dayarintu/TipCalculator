@@ -18,6 +18,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var totalAmountField: UITextField!
    
+    @IBAction func clearButton(_ sender: Any) {
+        
+        AmountTextField.text = ""
+        TipAmountTextField.text = ""
+        totalAmountField.text = ""
+        
+        //TipPercentSelector(<#T##sender: UISegmentedControl##UISegmentedControl#>)
+    }
 
     
     @IBAction func TipPercentSelector(_ sender: UISegmentedControl) {
@@ -38,12 +46,6 @@ class ViewController: UIViewController {
         } else {
             AmountTextField.text = ""
         }
-    }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondController = segue.destination as! SplitVCViewController
-        secondController.totalAmount = totalAmountField.text!
     }
     
     @IBAction func calculateTip(_ sender: Any) {

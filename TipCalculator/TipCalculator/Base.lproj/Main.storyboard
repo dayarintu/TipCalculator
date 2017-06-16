@@ -132,13 +132,13 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h32-sg-lM2" userLabel="calCclearStack">
-                                <rect key="frame" x="16" y="311.5" width="343" height="40"/>
+                                <rect key="frame" x="16" y="311.5" width="343" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-DJ-xgd">
-                                        <rect key="frame" x="0.0" y="0.0" width="146" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="37"/>
                                         <color key="backgroundColor" red="0.58116602897644043" green="0.49511992931365967" blue="0.23016375303268433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="DzI-4h-PLs"/>
+                                            <constraint firstAttribute="height" constant="37" id="DzI-4h-PLs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="31"/>
                                         <state key="normal" title="Calculate">
@@ -155,10 +155,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-kw-FOh">
-                                        <rect key="frame" x="221" y="0.0" width="122" height="40"/>
+                                        <rect key="frame" x="221" y="0.0" width="122" height="37"/>
                                         <color key="backgroundColor" red="0.58116602897644043" green="0.49511992931365967" blue="0.23016375303268433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="F1B-6j-m1M"/>
                                             <constraint firstAttribute="width" constant="122" id="aaJ-Fm-uHb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="35"/>
@@ -207,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4337" y="-2111"/>
+            <point key="canvasLocation" x="-4306" y="-2091"/>
         </scene>
     </scenes>
     <resources>

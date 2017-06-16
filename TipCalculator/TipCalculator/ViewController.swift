@@ -58,6 +58,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculateTip(_ sender: Any) {
+        calculateSound()
             if let amount = Double(AmountTextField.text!) , let tip = Double(TipAmountTextField.text!) {
             let totalAmount = amount + tip
             totalAmountField.text = String(totalAmount)

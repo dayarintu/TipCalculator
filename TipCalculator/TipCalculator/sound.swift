@@ -14,7 +14,7 @@ import AVFoundation
 var audioPlayer1 = AVAudioPlayer()
 func calculateSound() {
     
-    let alertSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "correct", ofType: "mp3")!)
+    let alertSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "coin", ofType: "mp3")!)
     
     do {
         try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)

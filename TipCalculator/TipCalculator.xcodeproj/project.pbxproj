@@ -21,15 +21,15 @@
 
 /* Begin PBXFileReference section */
 		633B19E51EF31203002ACA5E /* swift+gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "swift+gif.swift"; sourceTree = "<group>"; };
-		633EA9971EEF0FD900FF673E /* eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eat.png; sourceTree = "<group>"; };
-		6388DD331EF3581A008986C5 /* dollar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dollar.gif; sourceTree = "<group>"; };
+		633EA9971EEF0FD900FF673E /* eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eat.png; path = TipCalculator/eat.png; sourceTree = "<group>"; };
+		6388DD331EF3581A008986C5 /* dollar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = dollar.gif; path = TipCalculator/dollar.gif; sourceTree = "<group>"; };
 		63A0BD8E1EF393950092844E /* sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sound.swift; sourceTree = "<group>"; };
-		63A0BD901EF394050092844E /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
+		63A0BD901EF394050092844E /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = coin.mp3; path = TipCalculator/coin.mp3; sourceTree = "<group>"; };
 		63A8C72E1EEDA4C700ADA51C /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A8C7311EEDA4C700ADA51C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A8C7331EEDA4C700ADA51C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63A8C7361EEDA4C700ADA51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		63A8C7381EEDA4C700ADA51C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63A8C7381EEDA4C700ADA51C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TipCalculator/Assets.xcassets; sourceTree = "<group>"; };
 		63A8C73B1EEDA4C700ADA51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63A8C73D1EEDA4C700ADA51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,9 +45,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63A0BD921EF394C10092844E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				633B19E51EF31203002ACA5E /* swift+gif.swift */,
+				63A0BD8E1EF393950092844E /* sound.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		63A0BD931EF394CD0092844E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63A8C7351EEDA4C700ADA51C /* Main.storyboard */,
+				63A8C73A1EEDA4C700ADA51C /* LaunchScreen.storyboard */,
+				63A8C73D1EEDA4C700ADA51C /* Info.plist */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63A0BD941EF394D30092844E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63A8C7331EEDA4C700ADA51C /* ViewController.swift */,
+				63A8C7311EEDA4C700ADA51C /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		63A0BD951EF3950E0092844E /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				63A0BD901EF394050092844E /* coin.mp3 */,
+				63A8C7381EEDA4C700ADA51C /* Assets.xcassets */,
+				6388DD331EF3581A008986C5 /* dollar.gif */,
+				633EA9971EEF0FD900FF673E /* eat.png */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
 		63A8C7251EEDA4C700ADA51C = {
 			isa = PBXGroup;
 			children = (
+				63A0BD951EF3950E0092844E /* Media */,
 				63A8C7301EEDA4C700ADA51C /* TipCalculator */,
 				63A8C72F1EEDA4C700ADA51C /* Products */,
 			);
@@ -64,17 +104,9 @@
 		63A8C7301EEDA4C700ADA51C /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				63A8C7311EEDA4C700ADA51C /* AppDelegate.swift */,
-				63A8C7331EEDA4C700ADA51C /* ViewController.swift */,
-				633B19E51EF31203002ACA5E /* swift+gif.swift */,
-				63A8C7351EEDA4C700ADA51C /* Main.storyboard */,
-				63A0BD901EF394050092844E /* coin.mp3 */,
-				63A0BD8E1EF393950092844E /* sound.swift */,
-				63A8C7381EEDA4C700ADA51C /* Assets.xcassets */,
-				6388DD331EF3581A008986C5 /* dollar.gif */,
-				633EA9971EEF0FD900FF673E /* eat.png */,
-				63A8C73A1EEDA4C700ADA51C /* LaunchScreen.storyboard */,
-				63A8C73D1EEDA4C700ADA51C /* Info.plist */,
+				63A0BD921EF394C10092844E /* Model */,
+				63A0BD931EF394CD0092844E /* View */,
+				63A0BD941EF394D30092844E /* Controller */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";

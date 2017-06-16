@@ -22,13 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eat.png" translatesAutoresizingMaskIntoConstraints="NO" id="o1q-gG-lLE">
-                                <rect key="frame" x="135" y="20" width="132" height="111"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="132" id="MvQ-cl-3Xs"/>
-                                    <constraint firstAttribute="height" constant="111" id="afd-uo-bYU"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C9N-ZB-xxJ" userLabel="mainStack">
                                 <rect key="frame" x="21" y="160" width="344" height="160.5"/>
                                 <subviews>
@@ -47,15 +40,14 @@
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter $" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mZY-zS-FL7">
                                                 <rect key="frame" x="240" y="0.0" width="100" height="35"/>
-                                                <color key="backgroundColor" red="0.97241830579999999" green="0.5874760805" blue="0.50008834099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.85465494789999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="NXP-FU-QMM"/>
                                                     <constraint firstAttribute="height" constant="35" id="gEu-7r-USG"/>
                                                 </constraints>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -71,14 +63,14 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="jXj-SL-ZCZ">
+                                            <segmentedControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="jXj-SL-ZCZ">
                                                 <rect key="frame" x="216" y="0.0" width="125" height="31.5"/>
+                                                <color key="backgroundColor" white="0.85465494789999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <segments>
                                                     <segment title="15%"/>
                                                     <segment title="20%"/>
                                                     <segment title="25%"/>
                                                 </segments>
-                                                <color key="tintColor" red="0.97241830579999999" green="0.37434646539999999" blue="0.18738605080000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="TipPercentSelector:" destination="BYZ-38-t0r" eventType="valueChanged" id="gSA-os-Buz"/>
                                                 </connections>
@@ -100,15 +92,14 @@
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter $" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8y-iQ-nst">
                                                 <rect key="frame" x="238" y="0.0" width="106" height="35"/>
-                                                <color key="backgroundColor" red="0.97241830579999999" green="0.5874760805" blue="0.50008834099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.85465494789999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Gdw-Me-r8q"/>
                                                     <constraint firstAttribute="width" constant="106" id="m5R-GR-7VJ"/>
                                                 </constraints>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -126,25 +117,26 @@
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Total $" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZgU-by-eWF">
                                                 <rect key="frame" x="237" y="0.0" width="106" height="30"/>
-                                                <color key="backgroundColor" red="0.97241830579999999" green="0.5874760805" blue="0.50008834099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.85465494789999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="B1B-04-ICV"/>
                                                     <constraint firstAttribute="width" constant="106" id="uTn-5W-Es0"/>
                                                 </constraints>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h32-sg-lM2">
                                 <rect key="frame" x="24" y="325.5" width="327" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-DJ-xgd">
                                         <rect key="frame" x="0.0" y="0.0" width="185" height="40"/>
-                                        <color key="backgroundColor" red="0.9724183058375635" green="0.37434646539799821" blue="0.18738605076806328" alpha="0.84243899828767121" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.58116602897644043" green="0.49511992931365967" blue="0.23016375303268433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="DzI-4h-PLs"/>
                                         </constraints>
@@ -164,14 +156,14 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-kw-FOh">
                                         <rect key="frame" x="205" y="0.0" width="122" height="40"/>
-                                        <color key="backgroundColor" red="0.97241830579999999" green="0.37434646539999999" blue="0.18738605080000001" alpha="0.84243899830000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.58116602897644043" green="0.49511992931365967" blue="0.23016375303268433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="F1B-6j-m1M"/>
                                             <constraint firstAttribute="width" constant="122" id="aaJ-Fm-uHb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="35"/>
                                         <state key="normal" title="clear">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -185,32 +177,40 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollar.gif" translatesAutoresizingMaskIntoConstraints="NO" id="vlu-iv-Dgn">
+                                <rect key="frame" x="113" y="20" width="149" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="Noq-UR-MFj"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="h32-sg-lM2" secondAttribute="trailing" constant="8" id="5VV-GM-KA5"/>
                             <constraint firstItem="h32-sg-lM2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="7RT-Kl-KAl"/>
-                            <constraint firstItem="o1q-gG-lLE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BM2-IC-t7r"/>
-                            <constraint firstItem="C9N-ZB-xxJ" firstAttribute="top" secondItem="o1q-gG-lLE" secondAttribute="bottom" constant="29" id="L8R-VU-Jrv"/>
+                            <constraint firstItem="vlu-iv-Dgn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="7dO-P4-TUD"/>
+                            <constraint firstItem="vlu-iv-Dgn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DMt-vm-5gC"/>
                             <constraint firstItem="C9N-ZB-xxJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="LXF-Wu-IS7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="o1q-gG-lLE" secondAttribute="trailing" constant="92" id="Pgc-6Q-YTy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vlu-iv-Dgn" secondAttribute="trailing" constant="97" id="Nnx-kL-yVs"/>
                             <constraint firstItem="h32-sg-lM2" firstAttribute="top" secondItem="C9N-ZB-xxJ" secondAttribute="bottom" constant="5" id="mXf-K6-Xum"/>
                             <constraint firstAttribute="trailingMargin" secondItem="C9N-ZB-xxJ" secondAttribute="trailing" constant="-6" id="tH2-6i-LWS"/>
+                            <constraint firstItem="C9N-ZB-xxJ" firstAttribute="top" secondItem="vlu-iv-Dgn" secondAttribute="bottom" constant="34" id="yN1-2B-h9k"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="AmountTextField" destination="mZY-zS-FL7" id="8tT-ug-Zdj"/>
                         <outlet property="TipAmountTextField" destination="S8y-iQ-nst" id="6vx-Yi-kVb"/>
                         <outlet property="TipOutlet" destination="jXj-SL-ZCZ" id="kLS-Im-Nze"/>
+                        <outlet property="gifview" destination="vlu-iv-Dgn" id="nTr-qe-hvf"/>
                         <outlet property="totalAmountField" destination="ZgU-by-eWF" id="zog-Py-A7e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3792.8000000000002" y="-1897.6011994002999"/>
+            <point key="canvasLocation" x="-4135.1999999999998" y="-1960.569715142429"/>
         </scene>
     </scenes>
     <resources>
-        <image name="eat.png" width="512" height="512"/>
+        <image name="dollar.gif" width="128" height="128"/>
     </resources>
 </document>

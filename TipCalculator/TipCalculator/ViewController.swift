@@ -17,6 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var TipOutlet: UISegmentedControl!
     
     @IBOutlet weak var totalAmountField: UITextField!
+    
+    @IBOutlet weak var gifview: UIImageView!
+
+    
+    override func viewDidLoad() {
+        gifview.loadGif(name: "dollar")
+    }
    
     @IBAction func clearButton(_ sender: Any) {
         
@@ -25,6 +32,8 @@ class ViewController: UIViewController {
         totalAmountField.text = ""
         
         //TipPercentSelector(<#T##sender: UISegmentedControl##UISegmentedControl#>)
+        //UISegmentedControlSegment.hashValue = 0
+        TipOutlet.selectedSegmentIndex = -1
     }
 
     

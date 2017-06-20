@@ -31,7 +31,7 @@ func calculateSound() {
     } catch {
     }
     
-    audioPlayer1.prepareToPlay()
-    audioPlayer1.play()
+    audioPlayer1.prepareToPlay()  // prepare tp play func
+    audioPlayer1.play()  // action does play the sound
 }
 

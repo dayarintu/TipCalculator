@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		633B19E61EF31203002ACA5E /* swift+gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B19E51EF31203002ACA5E /* swift+gif.swift */; };
-		633EA9981EEF0FD900FF673E /* eat.png in Resources */ = {isa = PBXBuildFile; fileRef = 633EA9971EEF0FD900FF673E /* eat.png */; };
 		6388DD341EF3581A008986C5 /* dollar.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6388DD331EF3581A008986C5 /* dollar.gif */; };
 		63A0BD8F1EF393950092844E /* sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0BD8E1EF393950092844E /* sound.swift */; };
 		63A0BD911EF394050092844E /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63A0BD901EF394050092844E /* coin.mp3 */; };
@@ -21,10 +20,10 @@
 
 /* Begin PBXFileReference section */
 		633B19E51EF31203002ACA5E /* swift+gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "swift+gif.swift"; sourceTree = "<group>"; };
-		633EA9971EEF0FD900FF673E /* eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eat.png; path = TipCalculator/eat.png; sourceTree = "<group>"; };
 		6388DD331EF3581A008986C5 /* dollar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = dollar.gif; path = TipCalculator/dollar.gif; sourceTree = "<group>"; };
 		63A0BD8E1EF393950092844E /* sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sound.swift; sourceTree = "<group>"; };
 		63A0BD901EF394050092844E /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = coin.mp3; path = TipCalculator/coin.mp3; sourceTree = "<group>"; };
+		63A0BDC21EF39A090092844E /* TipCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TipCalculator.entitlements; sourceTree = "<group>"; };
 		63A8C72E1EEDA4C700ADA51C /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A8C7311EEDA4C700ADA51C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A8C7331EEDA4C700ADA51C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 				63A0BD901EF394050092844E /* coin.mp3 */,
 				63A8C7381EEDA4C700ADA51C /* Assets.xcassets */,
 				6388DD331EF3581A008986C5 /* dollar.gif */,
-				633EA9971EEF0FD900FF673E /* eat.png */,
 			);
 			name = Media;
 			sourceTree = "<group>";
@@ -104,6 +102,7 @@
 		63A8C7301EEDA4C700ADA51C /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				63A0BDC21EF39A090092844E /* TipCalculator.entitlements */,
 				63A0BD921EF394C10092844E /* Model */,
 				63A0BD931EF394CD0092844E /* View */,
 				63A0BD941EF394D30092844E /* Controller */,
@@ -145,6 +144,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = L5TGCNWYET;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -171,7 +175,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633EA9981EEF0FD900FF673E /* eat.png in Resources */,
 				63A8C73C1EEDA4C700ADA51C /* LaunchScreen.storyboard in Resources */,
 				6388DD341EF3581A008986C5 /* dollar.gif in Resources */,
 				63A8C7391EEDA4C700ADA51C /* Assets.xcassets in Resources */,
@@ -325,12 +328,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = L5TGCNWYET;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.daya.TipCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daya.tipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,12 +345,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = L5TGCNWYET;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.daya.TipCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daya.tipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

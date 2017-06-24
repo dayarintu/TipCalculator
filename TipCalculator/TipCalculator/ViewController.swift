@@ -20,8 +20,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var gifview: UIImageView!
 
-    
+
     override func viewDidLoad() {
+        // once the view loads the GIF animation runs
         gifview.loadGif(name: "dollar")
     }
    
@@ -57,7 +58,7 @@ class ViewController: UIViewController {
         }
     }
     
-    // fucntion to calculate the TIP 
+    // fucntion to calculate the TIP
     
     @IBAction func calculateTip(_ sender: Any) {
         if AmountTextField.text != "" && TipAmountTextField.text != ""{

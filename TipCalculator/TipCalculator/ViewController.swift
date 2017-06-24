@@ -57,6 +57,8 @@ class ViewController: UIViewController {
         }
     }
     
+    // fucntion to calculate the TIP 
+    
     @IBAction func calculateTip(_ sender: Any) {
         if AmountTextField.text != "" && TipAmountTextField.text != ""{
         calculateSound()
